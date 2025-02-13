@@ -54,7 +54,7 @@ with open(data_path, encoding='UTF-8') as f:
 
 while True:
     learning = False
-    user_input = input('输入: (单元+空格+学习?(true/false)): ').strip().lower().strip()
+    user_input = input('输入: (单元 [学习?(true/false))]: ').strip().lower().strip()
     if len(user_input) == 1:
         unit = int(user_input)
     else:
