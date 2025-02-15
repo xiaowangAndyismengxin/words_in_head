@@ -90,4 +90,4 @@ while True:
 ## 注意事项
 
 - 请尽量使用 **绝对路径** 来指定 `data.json` 文件的位置，以避免路径错误。
-- 如果语音朗读功能无法正常工作，请确保已正确安装并启用了 **MSSpeech_TTS_en-GB_Hazel.msi** 语言包。
+- 如果语音朗读功能无法正常工作，请确保已正确安装并启用了 **MSSpeech_TTS_en-GB_Hazel.msi** 语音包。
