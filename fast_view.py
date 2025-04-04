@@ -8,10 +8,11 @@ import sys
 import platform
 
 
+USER_SYSTEM_TYPE = platform.system()
+
 def clear_input_buffer():
     """清除标准输入缓冲区中的残留数据"""
-    system = platform.system()
-    if system == 'Windows':
+    if USER_SYSTEM_TYPE == 'Windows':
         import msvcrt
         while msvcrt.kbhit():
             msvcrt.getch()
@@ -36,7 +37,10 @@ def speak(text: str):
 
 
 def clear():
-    os.system('cls')
+    if USER_SYSTEM_TYPE == 'Windows':
+        os.system('cls')
+    else:
+        os.system('clear')
 
 
 def process_section(section_data: list, section_type: str, key_type: str,
