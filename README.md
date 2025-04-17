@@ -60,7 +60,7 @@ while True:
     learning = False
     clear_input_buffer()
 
-    user_input = input('输入: (单元 [学习?(true/false)]): ').strip().lower().strip()
+    user_input = input('输入: (单元 [学习?(true/false)]): ').strip().lower()
 
     try:
         if len(user_input) == 1:
