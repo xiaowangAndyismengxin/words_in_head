@@ -41,25 +41,45 @@ pip install pyttsx3 colorama tabulate
 
 ### 4. 运行程序
 
-将数据文件路径替换为实际路径（建议使用绝对路径），然后运行程序：
+编写main.py文件，注意读取数据文件时文件路径建议使用绝对路径，然后运行程序.我们为您准备了main文件的编写范例，以展示如何使用我的fast_view库：
 
 ```python
-from fast_view import fast_view
+from fast_view import fast_view, clear_input_buffer, clear
+from time import sleep
 import json
 
+
 # 请将以下路径替换为你的 data.json 文件的绝对路径
-data_path = "C:/Users/user/Desktop/word_in_head/data.json"
+data_path = "PATH_TO_YOUR_WORKSPACE/data.json"
+
 with open(data_path, encoding='UTF-8') as f:
     data = json.load(f)
 
+
 while True:
     learning = False
-    user_input = input('输入: (单元 [学习?(true/false))]: ').strip().lower().strip()
-    if len(user_input) == 1:
-        unit = int(user_input)
-    else:
-        unit, learning = int(user_input[0]), bool(user_input[1])
+    clear_input_buffer()
+
+    user_input = input('输入: (单元 [学习?(true/false)]): ').strip().lower().strip()
+
+    try:
+        if len(user_input) == 1:
+            unit = int(user_input)
+        elif len(user_input) == 2:
+            unit, learning = int(user_input[0]), bool(user_input[1])
+        else:
+            print('输入长度错误(length = 1 or 2)')
+            sleep(1)
+            clear()
+            continue
+    except ValueError:
+        print('输入错误(ValueError)')
+        sleep(1)
+        clear()
+        continue
+
     fast_view(data[f'unit{unit}'], learning=learning)
+
 ```
 
 ### 5. 输入指令
@@ -90,4 +110,4 @@ while True:
 ## 注意事项
 
 - 请尽量使用 **绝对路径** 来指定 `data.json` 文件的位置，以避免路径错误。
-- 如果语音朗读功能无法正常工作，请确保已正确安装并启用了 **MSSpeech_TTS_en-GB_Hazel.msi** 语音包。
+- 如果语音朗读功能无法正常工作，请确保已正确安装并启用了 **MSSpeech_TTS_en-GB_Hazel.msi** 语音包。(看看读音是否僵硬，且是否与展示音标一致)
