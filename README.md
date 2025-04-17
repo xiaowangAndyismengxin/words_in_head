@@ -41,7 +41,7 @@ pip install pyttsx3 colorama tabulate
 
 ### 4. 运行程序
 
-编写main.py文件，注意读取数据文件时文件路径建议使用绝对路径，然后运行程序.我们为您准备了main文件的编写范例，以展示如何使用我的fast_view库：
+编写main.py文件，注意读取数据文件时文件路径建议使用绝对路径，然后运行程序。我们为您准备了main文件的编写范例，以展示如何使用我的fast_view库：
 
 ```python
 from fast_view import fast_view, clear_input_buffer, clear
