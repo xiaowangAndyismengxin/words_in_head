@@ -27,9 +27,9 @@
 pip install pyttsx3 colorama tabulate
 ```
 
-### 2. 下载语言包
+### 2. 下载语音包
 
-程序使用了微软的语音引擎，需要下载并安装对应的语言包。请前往以下链接下载并安装 **MSSpeech_TTS_en-GB_Hazel.msi** 文件：
+程序使用了微软的语音引擎，需要下载并安装对应的语音包。请前往以下链接下载并安装 **MSSpeech_TTS_en-GB_Hazel.msi** 文件：
 
 [微软语言包下载地址](https://www.microsoft.com/en-us/download/details.aspx?id=27224)
 
@@ -60,7 +60,7 @@ while True:
     learning = False
     clear_input_buffer()
 
-    user_input = input('输入: (单元 [学习?(true/false)]): ').strip().lower()
+    user_input = input('输入: (单元 [学习?(true/false)]): ').strip().lower().strip()
 
     try:
         if len(user_input) == 1:
@@ -72,6 +72,7 @@ while True:
             sleep(1)
             clear()
             continue
+
     except ValueError:
         print('输入错误(ValueError)')
         sleep(1)
