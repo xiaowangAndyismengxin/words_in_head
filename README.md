@@ -64,7 +64,7 @@ while True:
 
     try:
         if len(user_input) == 1:
-            unit = int(user_input)
+            unit = int(user_input[0])
         elif len(user_input) == 2:
             unit, learning = int(user_input[0]), bool(user_input[1])
         else:
