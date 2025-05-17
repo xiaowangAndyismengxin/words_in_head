@@ -6,10 +6,11 @@ import json
 # 配置文件目录
 PROFILES_DIR = os.path.join(os.path.dirname(__file__), 'profiles')
 
-def get_configurations() -> list:
 
+def get_configurations() -> list:
     with open(os.path.join(PROFILES_DIR, 'configurations.json'), encoding='UTF-8') as f:
         return json.load(f)
+
 
 def select_profile() -> dict:
     configurations = get_configurations()
@@ -37,8 +38,13 @@ def main():
 
     words_and_phrases_data = parse_whole_configuration_file_words_and_phrase_data(profile_data)
     clear()
-    fast_view(words_and_phrases_data, learning=profile_data["learning_mode"],
+    learning_mode = profile_data.get("learning_mode")
+    if learning_mode is None:
+        learning_mode = input("由于配置文件没有指定模式，是否开启学习模式？(y/n): ").lower() == "y"
+
+    fast_view(words_and_phrases_data, learning=learning_mode,
               other_args=profile_data.get("other_args", dict()))
+
 
 if __name__ == '__main__':
     main()

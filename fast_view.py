@@ -131,5 +131,5 @@ def fast_view_once(unit_data: dict, learning: bool = True, other_args: dict | No
 
 def fast_view(unit_data: dict, learning: bool = True, other_args: dict | None = None):
     wrong_data = fast_view_once(unit_data, learning=learning, other_args=other_args)
-    while wrong_data['words'] or wrong_data['phrases']:
+    while wrong_data.get('words', []) or wrong_data.get('phrases', []):
         wrong_data = fast_view_once(wrong_data, learning=learning, other_args=other_args)

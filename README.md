@@ -80,6 +80,9 @@ python main.py
   ]
 }
 ```
+> 注意：other_args可以不填，默认值为{"first_letter_tip": "false"}
+
+> 注意：learning_mode可以不填或填null，如果不填会让你选择模式
 
 ### 配置参数说明
 | 字段 | 类型 | 说明 |
@@ -142,6 +145,7 @@ python main.py
 1. **添加新数据**：
    - 在`data/`目录新建JSON文件
    - 格式参照现有数据文件，按单元结构组织
+> 注意，phrases和words可以省略，无需专门创建一个空数组。
 
 2. **创建新配置**：
    - 修改`configurations.json`

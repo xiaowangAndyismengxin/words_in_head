@@ -1,0 +1,48 @@
+{
+    "roots": {
+        "words": [
+            {
+                "word": "pneumono",
+                "phonetic_symbol": "/ˌnjuːməˈnəʊ/",
+                "meaning": "表示 “肺”，与肺相关的词根",
+                "part_of_speech": "pref."
+            },
+            {
+                "word": "ultra",
+                "phonetic_symbol": "/ˈʌltrə/",
+                "meaning": "表示 “超，超过”，用于修饰后面的词，加强程度",
+                "part_of_speech": "pref."
+            },
+            {
+                "word": "micro",
+                "phonetic_symbol": "/ˈmaɪkrəʊ/",
+                "meaning": "表示 “微小的”，常见前缀，用于构成与微小相关的词",
+                "part_of_speech": "pref."
+            },
+            {
+                "word": "scopic",
+                "phonetic_symbol": "/ˈskɒpɪk/",
+                "meaning": "表示 “…… 镜的；…… 学的”，后缀，常构成形容词",
+                "part_of_speech": "suf."
+            },
+            {
+                "word": "silico",
+                "phonetic_symbol": "/ˈsɪlɪkəʊ/",
+                "meaning": "表示 “硅”，与硅相关的词根，可用于构成名词或与硅有关的词",
+                "part_of_speech": "pref."
+            },
+            {
+                "word": "volcano",
+                "phonetic_symbol": "/vɒlˈkeɪnəʊ/",
+                "meaning": "火山",
+                "part_of_speech": "n."
+            },
+            {
+                "word": "coniosis",
+                "phonetic_symbol": "/ˌkəʊniˈəʊsɪs/",
+                "meaning": "表示 “（灰尘等引起的）肺部疾病，尘肺”，后缀，用于构成表示疾病的名词",
+                "part_of_speech": "suf."
+            }
+        ]
+    }
+}

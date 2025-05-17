@@ -25,8 +25,8 @@ def parse_one_configuration_file_words_and_phrase_data(
         raise ValueError(f"数据文件 {data_file_name} 格式错误")
 
     return {
-        "words": [word for unit_key in unit_keys for word in data_file_content[unit_key]["words"]],
-        "phrases": [phrase for unit_key in unit_keys for phrase in data_file_content[unit_key]["phrases"]]
+        "words": [word for unit_key in unit_keys for word in data_file_content[unit_key].get("words", [])],
+        "phrases": [phrase for unit_key in unit_keys for phrase in data_file_content[unit_key].get("phrases", [])]
     }
 
 def parse_whole_configuration_file_words_and_phrase_data(raw_configuration_file_json_data: dict):
