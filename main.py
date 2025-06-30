@@ -1,4 +1,4 @@
-from fast_view import fast_view, clear_input_buffer, clear
+from fast_view import fast_view, clear_input_buffer, clear, dictation
 from handle_configuration_files import parse_whole_configuration_file_words_and_phrase_data
 import os
 import json
@@ -39,6 +39,10 @@ def main():
     words_and_phrases_data = parse_whole_configuration_file_words_and_phrase_data(profile_data)
     clear()
     learning_mode = profile_data.get("learning_mode")
+    dictation_mode = (input("是否开启听写模式？(y/n): ").lower() == "y")
+    if dictation_mode:
+        dictation(words_and_phrases_data)
+        return
     if learning_mode is None:
         learning_mode = input("由于配置文件没有指定模式，是否开启学习模式？(y/n): ").lower() == "y"
 

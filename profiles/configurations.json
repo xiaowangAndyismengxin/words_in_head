@@ -183,5 +183,12 @@
       "data_file_name": "longest_word_root_words.json",
       "units_keys": "roots"
     }
+  },
+  {
+    "name": "尝试背一些简单的单词",
+    "content": {
+      "data_file_name": "very_simple_words.json",
+      "units_keys": "unit1"
+    }
   }
 ]

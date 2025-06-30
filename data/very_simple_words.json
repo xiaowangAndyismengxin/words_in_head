@@ -1,0 +1,66 @@
+{
+  "unit1": {
+    "words": [
+      {
+        "word": "apple",
+        "phonetic_symbol": "/ˈæpl/",
+        "meaning": "苹果",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "banana",
+        "phonetic_symbol": "/bəˈnɑːnə/",
+        "meaning": "香蕉",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "word",
+        "phonetic_symbol": "/wɜːd/",
+        "meaning": "单词",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "book",
+        "phonetic_symbol": "/bʊk/",
+        "meaning": "书",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "pen",
+        "phonetic_symbol": "/pen/",
+        "meaning": "钢笔",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "desk",
+        "phonetic_symbol": "/desk/",
+        "meaning": "书桌",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "school",
+        "phonetic_symbol": "/skuːl/",
+        "meaning": "学校",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "teacher",
+        "phonetic_symbol": "/ˈtiːtʃə(r)/",
+        "meaning": "老师",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "student",
+        "phonetic_symbol": "/ˈstjuːdnt/",
+        "meaning": "学生",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "hello",
+        "phonetic_symbol": "/həˈləʊ/",
+        "meaning": "你好",
+        "part_of_speech": "int."
+      }
+    ]
+  }
+}
