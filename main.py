@@ -1,14 +1,16 @@
-from fast_view import fast_view, clear_input_buffer, clear, dictation
-from handle_configuration_files import parse_whole_configuration_file_words_and_phrase_data
+from fast_view import fast_view, clear, dictation
+from py_handle_profiles.handle_configuration_files import (
+    parse_whole_configuration_file_words_and_phrase_data,
+)
 import os
 import json
 
 # 配置文件目录
-PROFILES_DIR = os.path.join(os.path.dirname(__file__), 'profiles')
+PROFILES_DIR = os.path.join(os.path.dirname(__file__), "profiles")
 
 
 def get_configurations() -> list:
-    with open(os.path.join(PROFILES_DIR, 'configurations.json'), encoding='UTF-8') as f:
+    with open(os.path.join(PROFILES_DIR, "configurations.json"), encoding="UTF-8") as f:
         return json.load(f)
 
 
@@ -36,19 +38,26 @@ def main():
     if not profile_data:
         return
 
-    words_and_phrases_data = parse_whole_configuration_file_words_and_phrase_data(profile_data)
+    words_and_phrases_data = parse_whole_configuration_file_words_and_phrase_data(
+        profile_data
+    )
     clear()
     learning_mode = profile_data.get("learning_mode")
-    dictation_mode = (input("是否开启听写模式？(y/n): ").lower() == "y")
+    dictation_mode = input("是否开启听写模式？(y/n): ").lower() == "y"
     if dictation_mode:
         dictation(words_and_phrases_data)
         return
     if learning_mode is None:
-        learning_mode = input("由于配置文件没有指定模式，是否开启学习模式？(y/n): ").lower() == "y"
+        learning_mode = (
+            input("由于配置文件没有指定模式，是否开启学习模式？(y/n): ").lower() == "y"
+        )
 
-    fast_view(words_and_phrases_data, learning=learning_mode,
-              other_args=profile_data.get("other_args", dict()))
+    fast_view(
+        words_and_phrases_data,
+        learning=learning_mode,
+        other_args=profile_data.get("other_args", dict()),
+    )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

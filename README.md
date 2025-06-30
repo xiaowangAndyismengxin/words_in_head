@@ -67,15 +67,23 @@ python main.py
 `profiles/configurations.json`
 
 ### 配置示例
+
 ```json
 {
   "name": "初一上U1-U4百词大过关",
   "learning_mode": false,
-  "other_args": {"first_letter_tip": "true"},
+  "other_args": {
+    "first_letter_tip": "true"
+  },
   "content": [
     {
       "data_file_name": "data_of_the_first_semester_of_junior_high_school.json",
-      "units_keys": ["unit1", "unit2", "unit3", "unit4"]
+      "unit_keys": [
+        "unit1",
+        "unit2",
+        "unit3",
+        "unit4"
+      ]
     }
   ]
 }

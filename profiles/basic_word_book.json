@@ -1,0 +1,97 @@
+{
+  "book_name": "初一下初中英语单词本",
+  "content": [
+    {
+      "name": "各单元单词",
+      "generate_method": "auto",
+      "content": {
+        "data_file_name": "data_of_the_second_semester_of_junior_high_school.json",
+        "unit_keys": [
+          "unit1",
+          "unit2",
+          "unit3",
+          "unit4",
+          "unit5",
+          "unit6",
+          "unit7",
+          "unit8"
+        ]
+      }
+    },
+    {
+      "name": "两个单元为一组，背单词",
+      "generate_method": "auto",
+      "content": {
+        "data_file_name": "data_of_the_second_semester_of_junior_high_school.json",
+        "unit_keys": [
+          [
+            "unit1",
+            "unit2"
+          ],
+          [
+            "unit3",
+            "unit4"
+          ],
+          [
+            "unit5",
+            "unit6"
+          ],
+          [
+            "unit7",
+            "unit8"
+          ]
+        ],
+        "connection": "and"
+      }
+    },
+    {
+      "name": "百词大过关",
+      "generate_method": "manual",
+      "content": [
+        {
+          "name": "初一下U1-U4百词大过关",
+          "content": {
+            "data_file_name": "data_of_the_second_semester_of_junior_high_school.json",
+            "unit_keys": [
+              "unit1",
+              "unit2",
+              "unit3",
+              "unit4"
+            ]
+          }
+        },
+        {
+          "name": "初一下U5-U8百词大过关",
+          "content": {
+            "data_file_name": "data_of_the_second_semester_of_junior_high_school.json",
+            "unit_keys": [
+              "unit5",
+              "unit6",
+              "unit7",
+              "unit8"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": null,
+      "content": [
+        {
+          "name": "尝试背世界上最长的单词“硅酸盐沉着病”的词根: pneumonoultramicroscopicsilicovolcanoconiosis",
+          "content": {
+            "data_file_name": "longest_word_root_words.json",
+            "unit_keys": "roots"
+          }
+        },
+        {
+          "name": "尝试背一些简单的单词",
+          "content": {
+            "data_file_name": "very_simple_words.json",
+            "unit_keys": "unit1"
+          }
+        }
+      ]
+    }
+  ]
+}
