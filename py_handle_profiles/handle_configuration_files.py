@@ -3,7 +3,7 @@ import os
 from typing import Dict, List, Union
 
 
-def integrate_one_data_file_units(
+def parse_data_file_units(
     dict_with_data_file_name_and_units: Dict[str, Union[str, List[str]]],
 ) -> Dict[str, List[Dict]] | None:  # 更精确的返回类型注解
 
@@ -40,14 +40,14 @@ def integrate_one_data_file_units(
     }
 
 
-def parse_one_configuration_file_words_and_phrase_data(
+def parse_config_words_phrases(
     data_content: dict | list[dict],
 ):
     if isinstance(data_content, dict):
         data_content = [data_content]
     words_list = {"words": [], "phrases": []}
     for configuration in data_content:
-        result = integrate_one_data_file_units(configuration)
+        result = parse_data_file_units(configuration)
         words_list["words"].extend(result["words"])
         words_list["phrases"].extend(result["phrases"])
 
@@ -64,7 +64,7 @@ def parse_manual_configuration_file_words_and_phrase_data(
         content = [content]
     for configuration in content:
         name_and_content_dict[configuration.get("name", "未命名")] = (
-            parse_one_configuration_file_words_and_phrase_data(configuration["content"])
+            parse_data_file_units(configuration["content"])
         )
 
     return name_and_content_dict
@@ -86,7 +86,7 @@ def parse_auto_configuration_file_words_and_phrase_data(
         if isinstance(unit, str):
             unit = [unit]
 
-        name_and_content_dict[connection.join(unit)] = integrate_one_data_file_units(
+        name_and_content_dict[connection.join(unit)] = parse_data_file_units(
             {"data_file_name": data_file_name, "unit_keys": unit}
         )
 

@@ -25,6 +25,11 @@ def clear_input_buffer():
             sys.stdin.readline()
 
 
+def unbuffered_input(prompt: str = ""):
+    clear_input_buffer()
+    return input(prompt)
+
+
 english_voice = r"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-GB_HAZEL_11.0"
 chinese_voice = r"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_ZH-CN_HUIHUI_11.0"
 english_rate = 130
@@ -91,8 +96,7 @@ def process_section(
             if learning or not passed:
                 print(tabulate([word], headers="keys"))
                 speak(word[key_type])
-                clear_input_buffer()
-                input("按回车继续")
+                unbuffered_input("按回车继续")
                 clear()
                 print(
                     f"--{section_type}--  ",
@@ -104,9 +108,8 @@ def process_section(
             # handle user input
             first_letter = word[key_type][0] if first_letter_tip else ""
             user_input_tip = f"{word.get('part_of_speech', '')}{word['meaning']}: "
-            clear_input_buffer()
             print(user_input_tip + first_letter, end="")
-            user_input = (first_letter + input()).strip()
+            user_input = (first_letter + unbuffered_input()).strip()
 
             if user_input == word[key_type]:
                 print(
@@ -259,6 +262,22 @@ def dictation(unit_data: dict, delay: float = 5):
 
     full_answer = "\n".join(answer_lines)
     print(full_answer)
-    clear_input_buffer()
-    input("按回车退出")
+    unbuffered_input("按回车退出")
+    clear()
+
+
+def words_browse(unit_data: dict):
+    clear()
+    # 创建一个新列表合并单词和短语
+    all_items = unit_data["words"].copy()
+    if "phrases" in unit_data.keys():
+        all_items.extend(unit_data["phrases"])
+
+    for item in all_items:
+        print(
+            f'{item["word"] if "word" in item else item["phrase"]} ----- '
+            f'{item.get("part_of_speech", "")}{item["meaning"]}  '
+            f'{item.get("phonetic_symbol", "")}'
+        )
+    unbuffered_input("按回车退出")
     clear()

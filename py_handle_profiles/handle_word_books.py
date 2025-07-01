@@ -1,5 +1,5 @@
-from handle_configuration_files import (
-    parse_one_configuration_file_words_and_phrase_data,
+from py_handle_profiles.handle_configuration_files import (
+    parse_config_words_phrases,
     parse_manual_configuration_file_words_and_phrase_data,
     parse_auto_configuration_file_words_and_phrase_data,
 )
@@ -8,54 +8,51 @@ import os
 import json
 
 
-def phrase_one_part_no_direct(part_text: dict):
+def process_non_direct_part(part_text: dict):
 
-    name_and_content_dict = dict()
+    content_map = dict()
 
     part_name = part_text["name"]
     if part_name is None:
         return
     if part_text["generate_method"] == "manual":
-        name_and_content_dict[part_name] = (
-            parse_manual_configuration_file_words_and_phrase_data(part_text["content"])
+        content_map[part_name] = parse_manual_configuration_file_words_and_phrase_data(
+            part_text["content"]
         )
 
     elif part_text["generate_method"] == "auto":
-        name_and_content_dict[part_name] = (
-            parse_auto_configuration_file_words_and_phrase_data(part_text["content"])
+        content_map[part_name] = parse_auto_configuration_file_words_and_phrase_data(
+            part_text["content"]
         )
 
     else:
         raise ValueError(f"生成方法 {part_text['generate_method']} 不存在")
 
-    return name_and_content_dict
+    return content_map
 
 
-def phrase_one_direct_part(part_text: dict):
-    name_and_content_dict_list = list()
+def process_direct_part(part_text: dict):
+    content_map_list = list()
     for part in part_text["content"]:
-        name_and_content_dict_list.append(
-            {
-                part.get(
-                    "name", "未命名"
-                ): parse_one_configuration_file_words_and_phrase_data(part["content"])
-            }
+        content_map_list.append(
+            {part.get("name", "未命名"): parse_config_words_phrases(part["content"])}
         )
 
-    return name_and_content_dict_list
+    return content_map_list
 
 
-def parse_one_word_book(hole_word_book: dict) -> tuple[str, list]:
-    parts_content_list = list()
-    book_name = hole_word_book.get("book_name", "未命名")
+def parse_word_book(whole_word_book: dict) -> tuple[str, dict]:
+    parts_content_map = dict()
+    book_name = whole_word_book.get("book_name", "未命名")
 
-    for part in hole_word_book["content"]:
+    for part in whole_word_book["content"]:
         if part.get("name") is not None:
-            parts_content_list.append(phrase_one_part_no_direct(part))
+            parts_content_map.update(process_non_direct_part(part))
         else:
-            parts_content_list.append(phrase_one_direct_part(part))
+            for content_map in process_direct_part(part):
+                parts_content_map.update(content_map)
 
-    return book_name, parts_content_list
+    return book_name, parts_content_map
 
 
 def get_word_books_content_list() -> list[dict]:
@@ -84,9 +81,11 @@ def parse_all_word_books() -> dict:
     parsed_words_dict = dict()
 
     for word_book in hole_word_books:
-        book_name, parts_content_list = parse_one_word_book(word_book)
-        parsed_words_dict[book_name] = parts_content_list
+        book_name, parts_content_map = parse_word_book(word_book)
+        parsed_words_dict[book_name] = parts_content_map
     return parsed_words_dict
 
 
-print(parse_all_word_books())
+if __name__ == "__main__":
+    print(parse_all_word_books())
+    print(get_word_books_content_list())
