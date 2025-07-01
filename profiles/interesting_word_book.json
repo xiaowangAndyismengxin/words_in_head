@@ -1,0 +1,25 @@
+{
+  "book_name": "有趣的单词本",
+  "content": [
+    {
+      "name": "尝试背一下超级简单的单词吧",
+      "generate_method": "auto",
+      "content": {
+        "data_file_name": "very_simple_words.json",
+        "unit_keys": [
+          "unit1"
+        ]
+      }
+    },
+    {
+      "name": null,
+      "content": {
+        "name": "尝试背一下世界上最长的单词pneumonoultramicroscopicsilicovolcanoconiosis(火山矽肺症；硅酸盐沉着病；矽肺病)的词根吧",
+        "content": {
+          "data_file_name": "longest_word_root_words.json",
+          "unit_keys": "roots"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "book_name": "初一英语单词本",
+  "content": [
+    {
+      "name": "初一上各单元单词",
+      "generate_method": "auto",
+      "content": {
+        "data_file_name": "data_of_the_first_semester_of_junior_high_school.json",
+        "unit_keys": [
+          "unit1",
+          "unit2",
+          "unit3",
+          "unit4",
+          "unit5",
+          "unit6",
+          "unit7",
+          "unit8"
+        ]
+      }
+    },
+    {
+      "name": "初一下各单元单词",
+      "generate_method": "auto",
+      "content": {
+        "data_file_name": "data_of_the_second_semester_of_junior_high_school.json",
+        "unit_keys": [
+          "unit1",
+          "unit2",
+          "unit3",
+          "unit4",
+          "unit5",
+          "unit6",
+          "unit7",
+          "unit8"
+        ]
+      }
+    },
+    {
+      "name": "初一上百词大过关",
+      "generate_method": "manual",
+      "content": [
+        {
+          "name": "初一上U1-U4百词大过关",
+          "content": {
+            "data_file_name": "data_of_the_first_semester_of_junior_high_school.json",
+            "unit_keys": [
+              "unit1",
+              "unit2",
+              "unit3",
+              "unit4"
+            ]
+          }
+        },
+        {
+          "name": "初一上U5-U8百词大过关",
+          "content": {
+            "data_file_name": "data_of_the_first_semester_of_junior_high_school.json",
+            "unit_keys": [
+              "unit5",
+              "unit6",
+              "unit7",
+              "unit8"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "初一下百词大过关",
+      "generate_method": "manual",
+      "content": [
+        {
+          "name": "初一下U1-U4百词大过关",
+          "content": {
+            "data_file_name": "data_of_the_second_semester_of_junior_high_school.json",
+            "unit_keys": [
+              "unit1",
+              "unit2",
+              "unit3",
+              "unit4"
+            ]
+          }
+        },
+        {
+          "name": "初一下U5-U8百词大过关",
+          "content": {
+            "data_file_name": "data_of_the_second_semester_of_junior_high_school.json",
+            "unit_keys": [
+              "unit5",
+              "unit6",
+              "unit7",
+              "unit8"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

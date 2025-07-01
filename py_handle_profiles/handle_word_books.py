@@ -33,7 +33,11 @@ def process_non_direct_part(part_text: dict):
 
 def process_direct_part(part_text: dict):
     content_map_list = list()
-    for part in part_text["content"]:
+    for part in (
+        part_text["content"]
+        if isinstance(part_text["content"], list)
+        else [part_text["content"]]
+    ):
         content_map_list.append(
             {part.get("name", "未命名"): parse_config_words_phrases(part["content"])}
         )
