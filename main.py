@@ -51,13 +51,14 @@ for _ in range(2):
         break
     book_content = exercise_content
 
-print(
-    """1. 快速查看
+while True:
+
+    print(
+        """1. 快速查看
 2. 练习
 3. 听写
 4. 学习"""
-)
-while True:
+    )
 
     choice = int(unbuffered_input("请输入要执行的操作序号: "))
     clear()
