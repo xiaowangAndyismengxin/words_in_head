@@ -1,9 +1,20 @@
+import colorama
 from fast_view import fast_view, clear, dictation, unbuffered_input, words_browse
 from py_handle_profiles.handle_word_books import parse_all_word_books
+from colorama import Fore
 import os
 import json
 
 word_books_words_map = parse_all_word_books()
+colorama.init()
+
+
+def get_json_content_by_path(data: dict | list, path: list[str, int]) -> dict | list:
+    target = data
+    for key in path:
+        target = target[key]
+    return target
+
 
 # 显示可用词书
 print("可用的词书:")
@@ -60,12 +71,18 @@ while True:
 4. 学习"""
     )
 
-    choice = int(unbuffered_input("请输入要执行的操作序号: "))
+    choice = unbuffered_input(
+        f"请输入要执行的操作序号{Fore.RED}(输入q退出){Fore.RESET}: "
+    )
+    if choice.strip().lower() == "q":
+        break
+
+    choice = int(choice)
     clear()
     if choice == 1:
         words_browse(exercise_content)
     elif choice == 2:
-        fast_view(exercise_content)
+        fast_view(exercise_content, learning=False)
     elif choice == 3:
         dictation(exercise_content)
     elif choice == 4:
@@ -73,6 +90,3 @@ while True:
     else:
         print("序号无效，请重新输入")
         continue
-
-    if choice != 1:
-        break

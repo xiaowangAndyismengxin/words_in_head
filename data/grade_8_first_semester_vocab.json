@@ -1,0 +1,822 @@
+{
+  "unit1": {
+    "words": [
+      {
+        "word": "dinosaur",
+        "phonetic_symbol": "/ˈdaɪnəsɔː(r)/",
+        "meaning": "恐龙",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "intelligent",
+        "phonetic_symbol": "/ɪnˈtelɪdʒənt/",
+        "meaning": "有才智的；聪明的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "talented",
+        "phonetic_symbol": "/ˈtæləntɪd/",
+        "meaning": "有才能的；天才的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "artistic",
+        "phonetic_symbol": "/ɑːˈtɪstɪk/",
+        "meaning": "有艺术天赋的；（尤指）有美术才能的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "perhaps",
+        "phonetic_symbol": "/pəˈhæps/",
+        "meaning": "可能；大概；也许",
+        "part_of_speech": "adv."
+      },
+      {
+        "word": "notebook",
+        "phonetic_symbol": "/ˈnəʊtbʊk/",
+        "meaning": "笔记本",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "vehicle",
+        "phonetic_symbol": "/ˈviːəkl/",
+        "meaning": "交通工具；车辆",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "prehistoric",
+        "phonetic_symbol": "/ˌpriːhɪˈstɒrɪk/",
+        "meaning": "史前的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "completely",
+        "phonetic_symbol": "/kəmˈpliːtli/",
+        "meaning": "完全地；彻底地",
+        "part_of_speech": "adv."
+      },
+      {
+        "word": "original",
+        "phonetic_symbol": "/əˈrɪdʒənl/",
+        "meaning": "原来的；起初的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "birth",
+        "phonetic_symbol": "/bɜːθ/",
+        "meaning": "出生",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "suffering",
+        "phonetic_symbol": "/ˈsʌfərɪŋ/",
+        "meaning": "苦难；疼痛",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "artist",
+        "phonetic_symbol": "/ˈɑːtɪst/",
+        "meaning": "艺术家；（尤指）画家",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "piece",
+        "phonetic_symbol": "/piːs/",
+        "meaning": "（音乐作品的）一首",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "death",
+        "phonetic_symbol": "/deθ/",
+        "meaning": "死；死亡",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "whole",
+        "phonetic_symbol": "/həʊl/",
+        "meaning": "全部的；所有的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "editor",
+        "phonetic_symbol": "/ˈedɪtə(r)/",
+        "meaning": "（书籍的）编辑",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "organize",
+        "phonetic_symbol": "/ˈɔːɡənaɪz/",
+        "meaning": "安排；组织",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "order",
+        "phonetic_symbol": "/ˈɔːdə(r)/",
+        "meaning": "顺序",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "record",
+        "phonetic_symbol": "/rɪˈkɔːd/",
+        "meaning": "记录",
+        "part_of_speech": "v."
+      }
+    ],
+    "phrases": [
+      {
+        "phrase": "die out",
+        "meaning": "灭绝"
+      },
+      {
+        "phrase": "a type of",
+        "meaning": "一种"
+      },
+      {
+        "phrase": "be related to",
+        "meaning": "与……属于同一种类"
+      },
+      {
+        "phrase": "general education",
+        "meaning": "通识教育"
+      },
+      {
+        "phrase": "go back a long way",
+        "meaning": "历史悠久"
+      },
+      {
+        "phrase": "be similar to",
+        "meaning": "与…相似"
+      },
+      {
+        "phrase": "alphabetical order",
+        "meaning": "字母顺序"
+      },
+      {
+        "phrase": "play an important role",
+        "meaning": "起到重要作用"
+      }
+    ]
+  },
+  "unit2": {
+    "words": [
+      {
+        "word": "flight",
+        "phonetic_symbol": "/flaɪt/",
+        "meaning": "（尤指乘飞机的）航程",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "schedule",
+        "phonetic_symbol": "/ˈʃedjuːl/",
+        "meaning": "日程安排",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "everywhere",
+        "phonetic_symbol": "/ˈevriweə(r)/",
+        "meaning": "到处；各个地方",
+        "part_of_speech": "adv."
+      },
+      {
+        "word": "challenge",
+        "phonetic_symbol": "/ˈtʃæləndʒ/",
+        "meaning": "向（某人）挑战",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "prize",
+        "phonetic_symbol": "/praɪz/",
+        "meaning": "奖赏；奖励",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "promise",
+        "phonetic_symbol": "/ˈprɒmɪs/",
+        "meaning": "承诺；保证",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "chessboard",
+        "phonetic_symbol": "/ˈtʃesbɔːd/",
+        "meaning": "国际象棋棋盘",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "silver",
+        "phonetic_symbol": "/ˈsɪlvə(r)/",
+        "meaning": "银",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "reply",
+        "phonetic_symbol": "/rɪˈplaɪ/",
+        "meaning": "回复；答复",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "hesitation",
+        "phonetic_symbol": "/ˌhezɪˈteɪʃn/",
+        "meaning": "犹豫",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "wonder",
+        "phonetic_symbol": "/ˈwʌndə(r)/",
+        "meaning": "想知道；琢磨",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "agree",
+        "phonetic_symbol": "/əˈɡriː/",
+        "meaning": "同意；赞成",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "per cent",
+        "phonetic_symbol": "/pəˈsent/",
+        "meaning": "百分之……",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "currently",
+        "phonetic_symbol": "/ˈkʌrəntli/",
+        "meaning": "目前；当前",
+        "part_of_speech": "adv."
+      },
+      {
+        "word": "check",
+        "phonetic_symbol": "/tʃek/",
+        "meaning": "检查；核查",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "budget",
+        "phonetic_symbol": "/ˈbʌdʒɪt/",
+        "meaning": "预算",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "province",
+        "phonetic_symbol": "/ˈprɒvɪns/",
+        "meaning": "省份",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "sharply",
+        "phonetic_symbol": "/ˈʃɑːpli/",
+        "meaning": "急剧地；突然大幅度地",
+        "part_of_speech": "adv."
+      },
+      {
+        "word": "count",
+        "phonetic_symbol": "/kaʊnt/",
+        "meaning": "计算（或清点）总数",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "system",
+        "phonetic_symbol": "/ˈsɪstəm/",
+        "meaning": "系统",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "symbol",
+        "phonetic_symbol": "/ˈsɪmbl/",
+        "meaning": "符号；记号",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "represent",
+        "phonetic_symbol": "/ˌreprɪˈzent/",
+        "meaning": "代表",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "exactly",
+        "phonetic_symbol": "/ɪɡˈzæktli/",
+        "meaning": "准确地；确切地",
+        "part_of_speech": "adv."
+      }
+    ],
+    "phrases": [
+      {
+        "phrase": "flight schedule",
+        "meaning": "航班时刻表"
+      },
+      {
+        "phrase": "price tag",
+        "meaning": "价格标签"
+      },
+      {
+        "phrase": "for a moment",
+        "meaning": "片刻；一会儿"
+      },
+      {
+        "phrase": "without hesitation",
+        "meaning": "毫不犹豫"
+      },
+      {
+        "phrase": "go up",
+        "meaning": "上升"
+      },
+      {
+        "phrase": "go down",
+        "meaning": "下降"
+      },
+      {
+        "phrase": "write down",
+        "meaning": "写下；记下"
+      },
+      {
+        "phrase": "instead of",
+        "meaning": "代替；作为……的替换"
+      }
+    ]
+  },
+  "unit3": {
+    "words": [
+      {
+        "word": "network",
+        "phonetic_symbol": "/ˈnetwɜːk/",
+        "meaning": "网络",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "flood",
+        "phonetic_symbol": "/flʌd/",
+        "meaning": "洪水；水灾",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "multimedia",
+        "phonetic_symbol": "/ˌmʌltiˈmiːdiə/",
+        "meaning": "多媒体",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "expert",
+        "phonetic_symbol": "/ˈekspɜːt/",
+        "meaning": "专家",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "mobile",
+        "phonetic_symbol": "/ˈməʊbaɪl/",
+        "meaning": "可移动的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "payment",
+        "phonetic_symbol": "/ˈpeɪmənt/",
+        "meaning": "付款；支付",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "warn",
+        "phonetic_symbol": "/wɔːn/",
+        "meaning": "提醒注意；警告",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "treatment",
+        "phonetic_symbol": "/ˈtriːtmənt/",
+        "meaning": "治疗；疗法",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "data",
+        "phonetic_symbol": "/ˈdeɪtə/",
+        "meaning": "数据",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "company",
+        "phonetic_symbol": "/ˈkʌmpəni/",
+        "meaning": "公司",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "traffic",
+        "phonetic_symbol": "/ˈtræfɪk/",
+        "meaning": "路上行驶的车辆；交通",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "flow",
+        "phonetic_symbol": "/fləʊ/",
+        "meaning": "（人或事物）涌流；流动",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "smoothly",
+        "phonetic_symbol": "/ˈsmuːðli/",
+        "meaning": "平稳地；连续而流畅地",
+        "part_of_speech": "adv."
+      },
+      {
+        "word": "laptop",
+        "phonetic_symbol": "/ˈlæptɒp/",
+        "meaning": "笔记本电脑",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "screen",
+        "phonetic_symbol": "/skriːn/",
+        "meaning": "屏幕",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "weight",
+        "phonetic_symbol": "/weɪt/",
+        "meaning": "重量",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "digital",
+        "phonetic_symbol": "/ˈdɪdʒɪtl/",
+        "meaning": "数码的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "social media",
+        "phonetic_symbol": "/ˈsəʊʃl ˈmiːdiə/",
+        "meaning": "社交媒体",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "message",
+        "phonetic_symbol": "/ˈmesɪdʒ/",
+        "meaning": "（书面或口头的）信息",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "interview",
+        "phonetic_symbol": "/ˈɪntəvjuː/",
+        "meaning": "采访",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "positive",
+        "phonetic_symbol": "/ˈpɒzətɪv/",
+        "meaning": "正面的；积极的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "negative",
+        "phonetic_symbol": "/ˈneɡətɪv/",
+        "meaning": "消极的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "effect",
+        "phonetic_symbol": "/ɪˈfekt/",
+        "meaning": "影响",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "opinion",
+        "phonetic_symbol": "/əˈpɪnjən/",
+        "meaning": "意见；看法",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "novel",
+        "phonetic_symbol": "/ˈnɒvl/",
+        "meaning": "（长篇）小说",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "comment",
+        "phonetic_symbol": "/ˈkɒment/",
+        "meaning": "评论",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "basis",
+        "phonetic_symbol": "/ˈbeɪsɪs/",
+        "meaning": "基础",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "microprocessor",
+        "phonetic_symbol": "/ˌmaɪkrəʊˈprəʊsesə(r)/",
+        "meaning": "微处理器",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "microchip",
+        "phonetic_symbol": "/ˈmaɪkrəʊtʃɪp/",
+        "meaning": "微芯片；芯片",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "major",
+        "phonetic_symbol": "/ˈmeɪdʒə(r)/",
+        "meaning": "主要的；重要的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "breakthrough",
+        "phonetic_symbol": "/ˈbreɪkθruː/",
+        "meaning": "突破；重大进展",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "electronic",
+        "phonetic_symbol": "/ɪˌlekˈtrɒnɪk/",
+        "meaning": "电子的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "software",
+        "phonetic_symbol": "/ˈsɒftweə(r)/",
+        "meaning": "软件",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "app",
+        "phonetic_symbol": "/æp/",
+        "meaning": "(application 缩写) 应用程序；应用软件",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "era",
+        "phonetic_symbol": "/ˈɪərə/",
+        "meaning": "时代；纪元",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "download",
+        "phonetic_symbol": "/ˈdaʊnləʊd/",
+        "meaning": "下载",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "tiny",
+        "phonetic_symbol": "/ˈtaɪni/",
+        "meaning": "微小的",
+        "part_of_speech": "adj."
+      }
+    ],
+    "phrases": [
+      {
+        "phrase": "connect to",
+        "meaning": "连接",
+        "part_of_speech": "v."
+      },
+      {
+        "phrase": "bring big changes to",
+        "meaning": "给……带来重大变化",
+        "part_of_speech": "v."
+      },
+      {
+        "phrase": "mobile payment",
+        "meaning": "移动支付",
+        "part_of_speech": "n."
+      },
+      {
+        "phrase": "take ... for example",
+        "meaning": "以……为例",
+        "part_of_speech": "v."
+      },
+      {
+        "phrase": "rubbish bin",
+        "meaning": "垃圾桶",
+        "part_of_speech": "n."
+      },
+      {
+        "phrase": "social media",
+        "meaning": "社交媒体",
+        "part_of_speech": "n."
+      },
+      {
+        "phrase": "in person",
+        "meaning": "亲自；亲身",
+        "part_of_speech": "adv."
+      },
+      {
+        "phrase": "the general public",
+        "meaning": "公众；大众",
+        "part_of_speech": "n."
+      }
+    ]
+  },
+  "unit4": {
+    "words": [
+      {
+        "word": "balloon",
+        "phonetic_symbol": "/bəˈluːn/",
+        "meaning": "气球",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "wheel",
+        "phonetic_symbol": "/wiːl/",
+        "meaning": "轮；车轮",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "central",
+        "phonetic_symbol": "/ˈsentrəl/",
+        "meaning": "在中心的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "although",
+        "phonetic_symbol": "/ɔːlˈðəʊ/",
+        "meaning": "虽然；尽管；即使",
+        "part_of_speech": "conj."
+      },
+      {
+        "word": "attach",
+        "phonetic_symbol": "/əˈtætʃ/",
+        "meaning": "把……固定；把…附（在…上）",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "pull",
+        "phonetic_symbol": "/pʊl/",
+        "meaning": "拉；扯；拖",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "international",
+        "phonetic_symbol": "/ˌɪntəˈnæʃnl/",
+        "meaning": "国际的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "path",
+        "phonetic_symbol": "/pɑːθ/",
+        "meaning": "小路；小径",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "technique",
+        "phonetic_symbol": "/tekˈniːk/",
+        "meaning": "技巧；技艺",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "depend",
+        "phonetic_symbol": "/dɪˈpend/",
+        "meaning": "需要；依靠",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "doubt",
+        "phonetic_symbol": "/daʊt/",
+        "meaning": "疑惑；疑问",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "personally",
+        "phonetic_symbol": "/ˈpɜːsənəli/",
+        "meaning": "凭感觉；就个人意见",
+        "part_of_speech": "adv."
+      },
+      {
+        "word": "prediction",
+        "phonetic_symbol": "/prɪˈdɪkʃn/",
+        "meaning": "预言；预测",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "statement",
+        "phonetic_symbol": "/ˈsteɪtmənt/",
+        "meaning": "说明",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "benefit",
+        "phonetic_symbol": "/ˈbenɪfɪt/",
+        "meaning": "益处；优势",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "wing",
+        "phonetic_symbol": "/wɪŋ/",
+        "meaning": "（飞行器的）翅膀；机翼",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "distance",
+        "phonetic_symbol": "/ˈdɪstəns/",
+        "meaning": "距离",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "petrol",
+        "phonetic_symbol": "/ˈpetrəl/",
+        "meaning": "汽油",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "avoid",
+        "phonetic_symbol": "/əˈvɔɪd/",
+        "meaning": "避免；防止",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "anywhere",
+        "phonetic_symbol": "/ˈeniweə(r)/",
+        "meaning": "在(或去)任何地方",
+        "part_of_speech": "adv."
+      },
+      {
+        "word": "notice",
+        "phonetic_symbol": "/ˈnəʊtɪs/",
+        "meaning": "看(或听)到；注意到",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "type",
+        "phonetic_symbol": "/taɪp/",
+        "meaning": "（印刷用的）活字",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "mixture",
+        "phonetic_symbol": "/ˈmɪkstʃə(r)/",
+        "meaning": "混合物",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "heat",
+        "phonetic_symbol": "/hiːt/",
+        "meaning": "加热；变热",
+        "part_of_speech": "v."
+      },
+      {
+          "word": "press",
+          "phonetic_symbol": "/pres/",
+          "meaning": "压；按压",
+          "part_of_speech": "v."
+      },
+      {
+          "word": "metal",
+          "phonetic_symbol": "/ˈmetl/",
+          "meaning": "金属",
+          "part_of_speech": "n."
+      }
+    ],
+    "phrases": [
+      {
+          "phrase": "steam locomotive",
+          "meaning": "蒸汽机车"
+      },
+      {
+          "phrase": "crewed spacecraft",
+          "meaning": "载人航天器"
+      },
+      {
+          "phrase": "on foot",
+          "meaning": "步行"
+      },
+      {
+          "phrase": "a number of",
+          "meaning": "几个；若干"
+      },
+      {
+          "phrase": "take place",
+          "meaning": "发生；进行"
+      },
+      {
+          "phrase": "for instance",
+          "meaning": "例如；比如"
+      },
+      {
+          "phrase": "large amounts of",
+          "meaning": "大量"
+      },
+      {
+          "phrase": "international trade",
+          "meaning": "国际贸易"
+      },
+      {
+          "phrase": "depend on",
+          "meaning": "依靠；依赖"
+      },
+      {
+          "phrase": "3D printer",
+          "meaning": "3D 打印机"
+      },
+      {
+          "phrase": "without doubt",
+          "meaning": "毫无疑问"
+      },
+      {
+          "phrase": "of all time",
+          "meaning": "自古以来；有史以来"
+      },
+      {
+          "phrase": "make fun of",
+          "meaning": "取笑；拿……开玩笑"
+      },
+      {
+          "phrase": "traffic jam",
+          "meaning": "堵车；交通阻塞"
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "book_name": "初二英语单词本",
+  "content": [
+    {
+      "name": "初二上各单元单词",
+      "generate_method": "auto",
+      "content": {
+        "data_file_name": "grade_8_first_semester_vocab.json",
+        "unit_keys": [
+          "unit1",
+          "unit2",
+          "unit3",
+          "unit4"
+        ]
+      }
+    }
+  ]
+}

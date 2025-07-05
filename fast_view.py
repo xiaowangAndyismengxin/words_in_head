@@ -30,6 +30,19 @@ def unbuffered_input(prompt: str = ""):
     return input(prompt)
 
 
+PARTS_OF_SPEECH_MAP = {
+    "n.": "名词",
+    "v.": "动词",
+    "adj.": "形容词",
+    "adv.": "副词",
+    "prep.": "介词",
+    "conj.": "连词",
+    "pron.": "代词",
+    "intj.": "感叹词",
+    "num.": "数字",
+    "art.": "冠词",
+}
+
 english_voice = r"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-GB_HAZEL_11.0"
 chinese_voice = r"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_ZH-CN_HUIHUI_11.0"
 english_rate = 130
@@ -86,7 +99,7 @@ def process_section(
                 f"--{section_type}--  ",
                 f"剩下: {left_words}"
                 f" 错: {len(wrong_list)
-                                                   + other_wrong_count}\n\n\n",
+                        + other_wrong_count}\n\n\n",
             )
             # wrong word header
             if not passed:
@@ -102,7 +115,7 @@ def process_section(
                     f"--{section_type}--  ",
                     f"剩下: {left_words}"
                     f" 错: {len(wrong_list)
-                                                       + other_wrong_count}\n\n\n",
+                            + other_wrong_count}\n\n\n",
                 )
 
             # handle user input
@@ -172,18 +185,19 @@ def dictation(unit_data: dict, delay: float = 5):
     global engine
 
     # 定义词性对照表（提取到函数开头）
-    parts_of_speech_map = {
-        "n.": "名词",
-        "v.": "动词",
-        "adj.": "形容词",
-        "adv.": "副词",
-        "prep.": "介词",
-        "conj.": "连词",
-        "pron.": "代词",
-        "intj.": "感叹词",
-        "num.": "数字",
-        "art.": "冠词",
-    }
+
+    def get_chinese_pos(part_of_speech: str) -> str:
+        """处理词性并返回中文描述"""
+
+        if "/" in part_of_speech:
+            pos_list = [p.strip() for p in part_of_speech.split("/")]
+            chinese_pos = "或".join(
+                PARTS_OF_SPEECH_MAP.get(p, p) + ", " for p in pos_list
+            )
+        else:
+            chinese_pos = PARTS_OF_SPEECH_MAP.get(part_of_speech, part_of_speech) + ", "
+
+        return chinese_pos
 
     # 保存原始语音设置
     original_voice = engine.getProperty("voice")
@@ -207,19 +221,11 @@ def dictation(unit_data: dict, delay: float = 5):
         # 动态生成头部信息
         print(f"--dictation--  ordinal: {current_count} total: {total_items}\n\n\n")
 
-        # 处理词性转换
-        part_of_speech = word.get("part_of_speech", "")
-        if "/" in part_of_speech:
-            pos_list = [p.strip() for p in part_of_speech.split("/")]
-            chinese_pos = "或".join(
-                parts_of_speech_map.get(p, p) + ", " for p in pos_list
-            )
-        else:
-            chinese_pos = parts_of_speech_map.get(part_of_speech, part_of_speech) + ", "
-
         # 显示和朗读内容
         display_text = f"{word.get('part_of_speech', '')}{word['meaning']}"
-        speech_text = f"{chinese_pos}{word['meaning']}"
+        speech_text = (
+            f"{get_chinese_pos(word.get('part_of_speech', ''))}{word['meaning']}"
+        )
 
         print(display_text)
         # 朗读两次
@@ -238,7 +244,7 @@ def dictation(unit_data: dict, delay: float = 5):
         print(f"--dictation--  ordinal: {current_count} total: {total_items}\n\n\n")
 
         display_text = phrase["meaning"]
-        speech_text = f"短语, {phrase['meaning']}"
+        speech_text = f"短语, {get_chinese_pos(phrase.get('part_of_speech', ''))}{phrase['meaning']}"
 
         print(display_text)
         # 朗读两次

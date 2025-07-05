@@ -73,7 +73,7 @@ def get_word_books_content_list() -> list[dict]:
                 content = json.load(f)
                 word_books.append(content)
         except (json.JSONDecodeError, UnicodeDecodeError):
-            continue
+            raise ValueError(f"文件 {file_path} 不是有效的JSON文件")
 
     return word_books
 
@@ -92,4 +92,3 @@ def parse_all_word_books() -> dict:
 
 if __name__ == "__main__":
     print(parse_all_word_books())
-    print(get_word_books_content_list())
