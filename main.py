@@ -1,92 +1,122 @@
 import colorama
+from time import sleep
 from fast_view import fast_view, clear, dictation, unbuffered_input, words_browse
 from py_handle_profiles.handle_word_books import parse_all_word_books
 from colorama import Fore
-import os
-import json
 
 word_books_words_map = parse_all_word_books()
 colorama.init()
 
 
-def get_json_content_by_path(data: dict | list, path: list[str, int]) -> dict | list:
+def get_json_content_by_path(path: list[str, int], data=None) -> dict | list:
+    if data is None:
+        data = word_books_words_map
     target = data
     for key in path:
         target = target[key]
     return target
 
 
-# 显示可用词书
-print("可用的词书:")
-book_names = list(word_books_words_map.keys())
-for i, name in enumerate(book_names, 1):
-    print(f"{i}. {name}")
+page_path = list()
 
-# 选择词书
-while True:
-    try:
-        choice = int(unbuffered_input("请输入要查看的词书序号: ")) - 1
-        if 0 <= choice < len(book_names):
-            selected_book = book_names[choice]
-            break
-        print("序号无效，请重新输入")
-    except ValueError:
-        print("请输入数字")
-clear()
 
-book_content = word_books_words_map[selected_book]
+def make_user_choice_general_options():
+    global page_path
+    # 显示可用选项
+    print("可用的选项:")
+    options = list(current_content.keys())
+    for i, name in enumerate(options, 1):
+        print(f"{i}. {name}")
 
-exercise_content = None
-for _ in range(2):
-    print(f"可用的练习:")
-    exercises = list(book_content.keys())
-    for i, exercise in enumerate(exercises, 1):
-        print(f"{i}. {exercise}")
+    if page_path:
+        print("a. 返回上一页, b. 回到首页")
 
-    # 选择词书
+    selected_option = None
     while True:
         try:
-            choice = int(unbuffered_input("请输入要查看的练习序号: ")) - 1
-            if 0 <= choice < len(exercises):
-                selected_exercise = exercises[choice]
+            choice = unbuffered_input(
+                f"输入选项以继续{Fore.RED}(输入q退出){Fore.RESET}: "
+            )
+
+            if choice.strip().lower() == "q":
+                quit()
+
+            if page_path:
+                if choice.strip().lower() == "a":
+                    page_path.pop()
+                    return
+
+                if choice.strip().lower() == "b":
+                    page_path.clear()
+                    return
+
+            choice_index = int(choice) - 1
+
+            if 0 <= choice_index < len(options):
+                selected_option = options[choice_index]
                 break
             print("序号无效，请重新输入")
         except ValueError:
             print("请输入数字")
-    exercise_content = book_content[selected_exercise]
-    clear()
-    if (
-        exercise_content.get("words") is not None
-        or exercise_content.get("phrases") is not None
-    ):
-        break
-    book_content = exercise_content
 
-while True:
+    if selected_option is not None:
+        page_path.append(selected_option)
 
-    print(
-        """1. 快速查看
+
+def make_user_choice_learning_options():
+    while True:
+        print(
+            """1. 快速查看
 2. 练习
 3. 听写
 4. 学习"""
-    )
+        )
 
-    choice = unbuffered_input(
-        f"请输入要执行的操作序号{Fore.RED}(输入q退出){Fore.RESET}: "
-    )
-    if choice.strip().lower() == "q":
-        break
+        print("a. 返回上一页, b. 回到首页")
+        exercise_content = current_content
+        choice = unbuffered_input(
+            f"请输入要执行的操作序号{Fore.RED}(输入q退出){Fore.RESET}: "
+        )
+        if choice.strip().lower() == "q":
+            quit()
+        if choice.strip().lower() == "a":
+            page_path.pop()
+            return
+        if choice.strip().lower() == "b":
+            page_path.clear()
+            return
 
-    choice = int(choice)
+        choice = int(choice)
+        clear()
+        if choice == 1:
+            words_browse(exercise_content)
+        elif choice == 2:
+            fast_view(exercise_content, learning=False)
+        elif choice == 3:
+            dictation(exercise_content)
+        elif choice == 4:
+            fast_view(exercise_content, learning=True)
+        else:
+            print("序号无效，请重新输入")
+            sleep(2)
+            clear()
+
+
+while True:
     clear()
-    if choice == 1:
-        words_browse(exercise_content)
-    elif choice == 2:
-        fast_view(exercise_content, learning=False)
-    elif choice == 3:
-        dictation(exercise_content)
-    elif choice == 4:
-        fast_view(exercise_content, learning=True)
+
+    current_content = get_json_content_by_path(page_path)
+
+    # 显示当前路径
+    print(
+        f"当前路径: {' -> '.join([str(key) for key in page_path])}"
+        if page_path
+        else "当前路径: 根目录"
+    )
+    print()
+    if current_content.get("words") is None:
+        make_user_choice_general_options()
     else:
-        print("序号无效，请重新输入")
-        continue
+        make_user_choice_learning_options()
+
+    clear()
