@@ -1,3 +1,7 @@
+"""
+All functions have independent clear screen functions.
+"""
+
 import os
 import random
 import colorama
@@ -7,6 +11,7 @@ import pyttsx3
 import sys
 import platform
 from time import sleep
+from playsound import playsound
 
 USER_SYSTEM_TYPE = platform.system()
 
@@ -183,6 +188,7 @@ def fast_view(unit_data: dict, learning: bool = True, other_args: dict | None = 
 
 def dictation(unit_data: dict, delay: float = 5):
     global engine
+    clear()
 
     # 定义词性对照表（提取到函数开头）
 
@@ -198,6 +204,16 @@ def dictation(unit_data: dict, delay: float = 5):
             chinese_pos = PARTS_OF_SPEECH_MAP.get(part_of_speech, part_of_speech) + ", "
 
         return chinese_pos
+
+    print(f"{Fore.YELLOW}READY GO!{Fore.RESET}")
+
+    # 使用音效
+    playsound(
+        os.path.join(
+            os.path.dirname(__file__),
+            "audios\\dictation_audio-ready_go.wav",
+        ).replace("\\", "\\\\")
+    )
 
     # 保存原始语音设置
     original_voice = engine.getProperty("voice")

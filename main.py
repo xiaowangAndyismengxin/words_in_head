@@ -64,16 +64,17 @@ def make_user_choice_general_options():
 
 
 def make_user_choice_learning_options():
-    while True:
-        print(
-            """1. 快速查看
+
+    print(
+        """1. 快速查看
 2. 练习
 3. 听写
 4. 学习"""
-        )
+    )
 
-        print("a. 返回上一页, b. 回到首页")
-        exercise_content = current_content
+    print("a. 返回上一页, b. 回到首页")
+    exercise_content = current_content
+    try:
         choice = unbuffered_input(
             f"请输入要执行的操作序号{Fore.RED}(输入q退出){Fore.RESET}: "
         )
@@ -87,7 +88,6 @@ def make_user_choice_learning_options():
             return
 
         choice = int(choice)
-        clear()
         if choice == 1:
             words_browse(exercise_content)
         elif choice == 2:
@@ -99,7 +99,11 @@ def make_user_choice_learning_options():
         else:
             print("序号无效，请重新输入")
             sleep(2)
-            clear()
+            return
+    except ValueError:
+        print("请输入数字")
+        sleep(2)
+        return
 
 
 while True:
