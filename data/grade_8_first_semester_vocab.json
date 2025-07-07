@@ -748,74 +748,778 @@
         "part_of_speech": "v."
       },
       {
-          "word": "press",
-          "phonetic_symbol": "/pres/",
-          "meaning": "压；按压",
-          "part_of_speech": "v."
+        "word": "press",
+        "phonetic_symbol": "/pres/",
+        "meaning": "压；按压",
+        "part_of_speech": "v."
       },
       {
-          "word": "metal",
-          "phonetic_symbol": "/ˈmetl/",
-          "meaning": "金属",
-          "part_of_speech": "n."
+        "word": "metal",
+        "phonetic_symbol": "/ˈmetl/",
+        "meaning": "金属",
+        "part_of_speech": "n."
       }
     ],
     "phrases": [
       {
-          "phrase": "steam locomotive",
-          "meaning": "蒸汽机车"
+        "phrase": "steam locomotive",
+        "meaning": "蒸汽机车"
       },
       {
-          "phrase": "crewed spacecraft",
-          "meaning": "载人航天器"
+        "phrase": "crewed spacecraft",
+        "meaning": "载人航天器"
       },
       {
-          "phrase": "on foot",
-          "meaning": "步行"
+        "phrase": "on foot",
+        "meaning": "步行"
       },
       {
-          "phrase": "a number of",
-          "meaning": "几个；若干"
+        "phrase": "a number of",
+        "meaning": "几个；若干"
       },
       {
-          "phrase": "take place",
-          "meaning": "发生；进行"
+        "phrase": "take place",
+        "meaning": "发生；进行"
       },
       {
-          "phrase": "for instance",
-          "meaning": "例如；比如"
+        "phrase": "for instance",
+        "meaning": "例如；比如"
       },
       {
-          "phrase": "large amounts of",
-          "meaning": "大量"
+        "phrase": "large amounts of",
+        "meaning": "大量"
       },
       {
-          "phrase": "international trade",
-          "meaning": "国际贸易"
+        "phrase": "international trade",
+        "meaning": "国际贸易"
       },
       {
-          "phrase": "depend on",
-          "meaning": "依靠；依赖"
+        "phrase": "depend on",
+        "meaning": "依靠；依赖"
       },
       {
-          "phrase": "3D printer",
-          "meaning": "3D 打印机"
+        "phrase": "3D printer",
+        "meaning": "3D 打印机"
       },
       {
-          "phrase": "without doubt",
-          "meaning": "毫无疑问"
+        "phrase": "without doubt",
+        "meaning": "毫无疑问"
       },
       {
-          "phrase": "of all time",
-          "meaning": "自古以来；有史以来"
+        "phrase": "of all time",
+        "meaning": "自古以来；有史以来"
       },
       {
-          "phrase": "make fun of",
-          "meaning": "取笑；拿……开玩笑"
+        "phrase": "make fun of",
+        "meaning": "取笑；拿……开玩笑"
       },
       {
-          "phrase": "traffic jam",
-          "meaning": "堵车；交通阻塞"
+        "phrase": "traffic jam",
+        "meaning": "堵车；交通阻塞"
+      }
+    ]
+  },
+  "unit5": {
+    "words": [
+      {
+        "word": "exchange",
+        "phonetic_symbol": "/ɪksˈtʃeɪndʒ/",
+        "meaning": "交流",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "nervous",
+        "phonetic_symbol": "/ˈnɜːvəs/",
+        "meaning": "焦虑的；担忧的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "grateful",
+        "phonetic_symbol": "/ˈɡreɪtfl/",
+        "meaning": "感激的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "chopstick",
+        "phonetic_symbol": "/ˈtʃɒpstɪk/",
+        "meaning": "筷子",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "tour",
+        "phonetic_symbol": "/tʊə(r)/",
+        "meaning": "旅行；旅游",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "tai chi",
+        "phonetic_symbol": "/ˈtaɪ ˈtʃiː/",
+        "meaning": "太极（拳）",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "yet",
+        "phonetic_symbol": "/jet/",
+        "meaning": "尚(未);还;仍",
+        "part_of_speech": "adv."
+      },
+      {
+        "word": "independent",
+        "phonetic_symbol": "/ˌɪndɪˈpendənt/",
+        "meaning": "自主的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "content",
+        "phonetic_symbol": "/ˈkɒntent/",
+        "meaning": "内容",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "feeling",
+        "phonetic_symbol": "/ˈfiːlɪŋ/",
+        "meaning": "感觉;感情",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "shock",
+        "phonetic_symbol": "/ʃɒk/",
+        "meaning": "震惊;令人震惊的事",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "foreign",
+        "phonetic_symbol": "/ˈfɒrən/",
+        "meaning": "外国的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "confused",
+        "phonetic_symbol": "/kənˈfjuːzd/",
+        "meaning": "糊涂的;迷惑的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "anxious",
+        "phonetic_symbol": "/ˈæŋkʃəs/",
+        "meaning": "焦虑的;忧虑的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "phase",
+        "phonetic_symbol": "/feɪz/",
+        "meaning": "阶段;时期",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "honeymoon",
+        "phonetic_symbol": "/ˈhʌnimuːn/",
+        "meaning": "蜜月",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "unfamiliar",
+        "phonetic_symbol": "/ˌʌnfəˈmɪliə(r)/",
+        "meaning": "陌生的;不熟悉的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "homesick",
+        "phonetic_symbol": "/ˈhəʊmsɪk/",
+        "meaning": "想家的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "lonely",
+        "phonetic_symbol": "/ˈləʊnli/",
+        "meaning": "孤独的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "deal",
+        "phonetic_symbol": "/diːl/",
+        "meaning": "对付;应付",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "expect",
+        "phonetic_symbol": "/ɪkˈspekt/",
+        "meaning": "期待;盼望",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "situation",
+        "phonetic_symbol": "/ˌsɪtʃuˈeɪʃn/",
+        "meaning": "情况",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "accept",
+        "phonetic_symbol": "/əkˈsept/",
+        "meaning": "接受",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "adaptation",
+        "phonetic_symbol": "/ˌædæpˈteɪʃn/",
+        "meaning": "适应",
+        "part_of_speech": "n."
+      }
+    ],
+    "phrases": [
+      {
+        "phrase": "Beijing opera",
+        "meaning": "京剧"
+      },
+      {
+        "phrase": "host family",
+        "meaning": "寄宿家庭"
+      },
+      {
+        "phrase": "snake its way",
+        "meaning": "蜿蜒"
+      },
+      {
+        "phrase": "culture shock",
+        "meaning": "文化冲击"
+      },
+      {
+        "phrase": "deal with",
+        "meaning": "解决;处理"
+      },
+      {
+        "phrase": "feel at home",
+        "meaning": "感到舒适自在"
+      }
+    ]
+  },
+  "unit6": {
+    "words": [
+      {
+        "word": "author",
+        "phonetic_symbol": "/ˈɔːθə(r)/",
+        "part_of_speech": "n.",
+        "meaning": "作者；作家"
+      },
+      {
+        "word": "remains",
+        "phonetic_symbol": "/rɪˈmeɪnz/",
+        "part_of_speech": "n.",
+        "meaning": "遗迹；遗址"
+      },
+      {
+        "word": "locate",
+        "phonetic_symbol": "/ləʊˈkeɪt/",
+        "part_of_speech": "v.",
+        "meaning": "把……安置在(或建造于)"
+      },
+      {
+        "word": "soldier",
+        "phonetic_symbol": "/ˈsəʊldʒə(r)/",
+        "part_of_speech": "n.",
+        "meaning": "士兵"
+      },
+      {
+        "word": "captain",
+        "phonetic_symbol": "/ˈkæptɪn/",
+        "part_of_speech": "n.",
+        "meaning": "首领；领导者"
+      },
+      {
+        "word": "empty",
+        "phonetic_symbol": "/ˈempti/",
+        "part_of_speech": "adj.",
+        "meaning": "空的"
+      },
+      {
+        "word": "victory",
+        "phonetic_symbol": "/ˈvɪktəri/",
+        "part_of_speech": "n.",
+        "meaning": "胜利；成功"
+      },
+      {
+        "word": "joke",
+        "phonetic_symbol": "/dʒəʊk/",
+        "part_of_speech": "n.",
+        "meaning": "笑话；玩笑"
+      },
+      {
+        "word": "midnight",
+        "phonetic_symbol": "/ˈmɪdnaɪt/",
+        "part_of_speech": "n.",
+        "meaning": "午夜"
+      },
+      {
+        "word": "except",
+        "phonetic_symbol": "/ɪkˈsept/",
+        "part_of_speech": "prep.",
+        "meaning": "除……之外"
+      },
+      {
+        "word": "hide",
+        "phonetic_symbol": "/haɪd/",
+        "part_of_speech": "v.",
+        "meaning": "藏；隐藏"
+      },
+      {
+        "word": "secretly",
+        "phonetic_symbol": "/ˈsiːkrətli/",
+        "part_of_speech": "adv.",
+        "meaning": "秘密地"
+      },
+      {
+        "word": "enter",
+        "phonetic_symbol": "/ˈentə(r)/",
+        "part_of_speech": "v.",
+        "meaning": "进来；进入"
+      },
+      {
+        "word": "succeed",
+        "phonetic_symbol": "/səkˈsiːd/",
+        "part_of_speech": "v.",
+        "meaning": "达到目的；成功"
+      },
+      {
+        "word": "trick",
+        "phonetic_symbol": "/trɪk/",
+        "part_of_speech": "n.",
+        "meaning": "诡计"
+      },
+      {
+        "word": "beat",
+        "phonetic_symbol": "/biːt/",
+        "part_of_speech": "v.",
+        "meaning": "打败(某人)"
+      },
+      {
+        "word": "pretend",
+        "phonetic_symbol": "/prɪˈtend/",
+        "part_of_speech": "v.",
+        "meaning": "假装；佯装"
+      },
+      {
+        "word": "enemy",
+        "phonetic_symbol": "/ˈenəmi/",
+        "part_of_speech": "n.",
+        "meaning": "敌人"
+      },
+      {
+        "word": "fail",
+        "phonetic_symbol": "/feɪl/",
+        "part_of_speech": "v.",
+        "meaning": "失败；未能(做到)"
+      },
+      {
+        "word": "therefore",
+        "phonetic_symbol": "/ˈðeəfɔː(r)/",
+        "part_of_speech": "adv.",
+        "meaning": "因此；所以"
+      },
+      {
+        "word": "within",
+        "phonetic_symbol": "/wɪˈðɪn/",
+        "part_of_speech": "prep.",
+        "meaning": "在(某段时间)；在(某段时间)内"
+      },
+      {
+        "word": "fill",
+        "phonetic_symbol": "/fɪl/",
+        "part_of_speech": "v.",
+        "meaning": "(使)充满；(使)装满"
+      },
+      {
+        "word": "towards",
+        "phonetic_symbol": "/təˈwɔːdz/",
+        "part_of_speech": "prep.",
+        "meaning": "向；朝；对着"
+      },
+      {
+        "word": "attack",
+        "phonetic_symbol": "/əˈtæk/",
+        "part_of_speech": "n.",
+        "meaning": "袭击；攻击"
+      },
+      {
+        "word": "fog",
+        "phonetic_symbol": "/fɒɡ/",
+        "part_of_speech": "n.",
+        "meaning": "雾"
+      }
+    ],
+    "phrases": [
+      {
+        "phrase": "make jokes about",
+        "meaning": "开……的玩笑"
+      },
+      {
+        "phrase": "succeed in",
+        "meaning": "在……方面成功"
+      },
+      {
+        "phrase": "be tired of",
+        "meaning": "厌烦"
+      },
+      {
+        "phrase": "go on board",
+        "meaning": "上船"
+      },
+      {
+        "phrase": "be jealous of",
+        "meaning": "嫉妒"
+      },
+      {
+        "phrase": "be full of",
+        "meaning": "装满；充满"
+      }
+    ]
+  },
+  "unit7": {
+    "words": [
+      {
+        "word": "regularly",
+        "phonetic_symbol": "/ˈreɡjələrli/",
+        "part_of_speech": "adv.",
+        "meaning": "有规律地"
+      },
+      {
+        "word": "repeat",
+        "phonetic_symbol": "/rɪˈpiːt/",
+        "part_of_speech": "v.",
+        "meaning": "重复"
+      },
+      {
+        "word": "note",
+        "phonetic_symbol": "/nəʊt/",
+        "part_of_speech": "n.",
+        "meaning": "笔记;记录"
+      },
+      {
+        "word": "visual",
+        "phonetic_symbol": "/ˈvɪʒuəl/",
+        "part_of_speech": "adj.",
+        "meaning": "视觉的"
+      },
+      {
+        "word": "mentally",
+        "phonetic_symbol": "/ˈmentəli/",
+        "part_of_speech": "adv.",
+        "meaning": "精神上"
+      },
+      {
+        "word": "link",
+        "phonetic_symbol": "/lɪŋk/",
+        "part_of_speech": "v.",
+        "meaning": "联系;相联系"
+      },
+      {
+        "word": "list",
+        "phonetic_symbol": "/lɪst/",
+        "part_of_speech": "n.",
+        "meaning": "清单"
+      },
+      {
+        "word": "especially",
+        "phonetic_symbol": "/ɪˈspeʃəli/",
+        "part_of_speech": "adv.",
+        "meaning": "尤其"
+      },
+      {
+        "word": "diet",
+        "phonetic_symbol": "/ˈdaɪət/",
+        "part_of_speech": "n.",
+        "meaning": "日常饮食"
+      },
+      {
+        "word": "maintain",
+        "phonetic_symbol": "/meɪnˈteɪn/",
+        "part_of_speech": "v.",
+        "meaning": "维持;保持"
+      },
+      {
+        "word": "nut",
+        "phonetic_symbol": "/nʌt/",
+        "part_of_speech": "n.",
+        "meaning": "坚果"
+      },
+      {
+        "word": "relax",
+        "phonetic_symbol": "/rɪˈlæks/",
+        "part_of_speech": "v.",
+        "meaning": "放松;休息"
+      },
+      {
+        "word": "stressed",
+        "phonetic_symbol": "/strest/",
+        "part_of_speech": "adj.",
+        "meaning": "心力交瘁的;焦虑不安的"
+      },
+      {
+        "word": "tend",
+        "phonetic_symbol": "/tend/",
+        "part_of_speech": "v.",
+        "meaning": "往往会;常常就"
+      },
+      {
+        "word": "normal",
+        "phonetic_symbol": "/ˈnɔːml/",
+        "part_of_speech": "adj.",
+        "meaning": "正常的"
+      },
+      {
+        "word": "loss",
+        "phonetic_symbol": "/lɒs/",
+        "part_of_speech": "n.",
+        "meaning": "丧失;损失"
+      },
+      {
+        "word": "fork",
+        "phonetic_symbol": "/fɔːk/",
+        "part_of_speech": "n.",
+        "meaning": "餐叉"
+      },
+      {
+        "word": "onion",
+        "phonetic_symbol": "/ˈʌnjən/",
+        "part_of_speech": "n.",
+        "meaning": "洋葱"
+      },
+      {
+        "word": "ant",
+        "phonetic_symbol": "/ænt/",
+        "part_of_speech": "n.",
+        "meaning": "蚂蚁"
+      },
+      {
+        "word": "context",
+        "phonetic_symbol": "/ˈkɒntekst/",
+        "part_of_speech": "n.",
+        "meaning": "上下文;语境"
+      },
+      {
+        "word": "image",
+        "phonetic_symbol": "/ˈɪmɪdʒ/",
+        "part_of_speech": "n.",
+        "meaning": "图像"
+      },
+      {
+        "word": "sense",
+        "phonetic_symbol": "/sens/",
+        "part_of_speech": "n.",
+        "meaning": "感觉官能(即视、听、嗅、味、触五觉)"
+      },
+      {
+        "word": "summary",
+        "phonetic_symbol": "/ˈsʌməri/",
+        "part_of_speech": "n.",
+        "meaning": "总结;概括"
+      },
+      {
+        "word": "contain",
+        "phonetic_symbol": "/kənˈteɪn/",
+        "part_of_speech": "v.",
+        "meaning": "包含;含有"
+      },
+      {
+        "word": "particular",
+        "phonetic_symbol": "/pəˈtɪkjələ(r)/",
+        "part_of_speech": "adj.",
+        "meaning": "专指的;特指的"
+      },
+      {
+        "word": "chemistry",
+        "phonetic_symbol": "/ˈkemɪstri/",
+        "part_of_speech": "n.",
+        "meaning": "化学性质;化学"
+      }
+    ],
+    "phrases": [
+      {
+        "phrase": "flash card",
+        "meaning": "识字卡片"
+      },
+      {
+        "phrase": "make a point of doing something",
+        "meaning": "(因重要或必要)保证做"
+      },
+      {
+        "phrase": "last but not least",
+        "meaning": "最后但同样重要的"
+      },
+      {
+        "phrase": "natural disaster",
+        "meaning": "自然灾害"
+      },
+      {
+        "phrase": "figure out",
+        "meaning": "弄懂;弄清楚"
+      }
+    ]
+  },
+  "unit8": {
+    "words": [
+      {
+        "word": "attack",
+        "phonetic_symbol": "/əˈtæk/",
+        "meaning": "袭击;攻击",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "faithful",
+        "phonetic_symbol": "/ˈfeɪθfl/",
+        "meaning": "忠实的;忠诚的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "hold",
+        "phonetic_symbol": "/həʊld/",
+        "meaning": "抱着，拿着",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "responsible",
+        "phonetic_symbol": "/rɪˈspɒnsəbl/",
+        "meaning": "可信任的;可信赖的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "awake",
+        "phonetic_symbol": "/əˈweɪk/",
+        "meaning": "醒着",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "flat",
+        "phonetic_symbol": "/flæt/",
+        "meaning": "公寓",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "choice",
+        "phonetic_symbol": "/tʃɔɪs/",
+        "meaning": "选择",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "advise",
+        "phonetic_symbol": "/ədˈvaɪz/",
+        "meaning": "劝告;建议",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "cause",
+        "phonetic_symbol": "/kɔːz/",
+        "meaning": "引起;造成;导致",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "complain",
+        "phonetic_symbol": "/kəmˈpleɪn/",
+        "meaning": "抱怨;投诉",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "litter",
+        "phonetic_symbol": "/ˈlɪtə(r)/",
+        "meaning": "垃圾",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "unlikely",
+        "phonetic_symbol": "/ʌnˈlaɪkli/",
+        "meaning": "不大可能发生的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "relieve",
+        "phonetic_symbol": "/rɪˈliːv/",
+        "meaning": "方便;解手",
+        "part_of_speech": "v."
+      },
+      {
+        "word": "indoors",
+        "phonetic_symbol": "/ˌɪnˈdɔːz/",
+        "meaning": "在室内",
+        "part_of_speech": "adv."
+      },
+      {
+        "word": "magical",
+        "phonetic_symbol": "/ˈmædʒɪkl/",
+        "meaning": "有魔力的",
+        "part_of_speech": "adj."
+      },
+      {
+        "word": "wealth",
+        "phonetic_symbol": "/welθ/",
+        "meaning": "钱财;财富",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "queen",
+        "phonetic_symbol": "/kwiːn/",
+        "meaning": "女王;王后",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "servant",
+        "phonetic_symbol": "/ˈsɜːvənt/",
+        "meaning": "仆人;佣人",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "pride",
+        "phonetic_symbol": "/praɪd/",
+        "meaning": "自豪;骄傲",
+        "part_of_speech": "n."
+      },
+      {
+        "word": "among",
+        "phonetic_symbol": "/əˈmʌŋ/",
+        "meaning": "在…中",
+        "part_of_speech": "prep."
+      },
+      {
+        "word": "relationship",
+        "phonetic_symbol": "/rɪˈleɪʃnʃɪp/",
+        "meaning": "关系",
+        "part_of_speech": "n."
+      }
+    ],
+    "phrases": [
+      {
+        "phrase": "grow up",
+        "meaning": "长大;成熟"
+      },
+      {
+        "phrase": "care for",
+        "meaning": "照顾;照料"
+      },
+      {
+        "phrase": "in short",
+        "meaning": "总之;简言之"
+      },
+      {
+        "phrase": "have no choice but to do",
+        "meaning": "别无选择;只能…"
+      },
+      {
+        "phrase": "run free",
+        "meaning": "四处自由走动"
+      },
+      {
+        "phrase": "lie around",
+        "meaning": "懒散日;游手好闲"
+      },
+      {
+        "phrase": "complain about",
+        "meaning": "抱怨"
+      },
+      {
+        "phrase": "in addition",
+        "meaning": "除……以外(还)"
+      },
+      {
+        "phrase": "catch the eye of somebody",
+        "meaning": "引起某人的注意"
       }
     ]
   }
