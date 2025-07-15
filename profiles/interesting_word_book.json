@@ -6,9 +6,7 @@
       "generate_method": "auto",
       "content": {
         "data_file_name": "very_simple_words.json",
-        "unit_keys": [
-          "unit1"
-        ]
+        "unit_keys": "unit1"
       }
     },
     {

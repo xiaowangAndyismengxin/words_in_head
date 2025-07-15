@@ -1,0 +1,36 @@
+{
+    "american_british_differences": {
+        "words": [
+            {
+                "word": "advertisement",
+                "phonetic_symbol": "/ˌædvərˈtaɪzmənt/ (美) /ədˈvɜːtɪsmənt/ (英)",
+                "meaning": "广告",
+                "part_of_speech": "n."
+            },
+            {
+                "word": "bath",
+                "phonetic_symbol": "/bæθ/ (美) /bɑːθ/ (英)",
+                "meaning": "浴室；洗澡",
+                "part_of_speech": "n."
+            },
+            {
+                "word": "task",
+                "phonetic_symbol": "/tæsk/ (美) /tɑːsk/ (英)",
+                "meaning": "任务",
+                "part_of_speech": "n."
+            },
+            {
+                "word": "disaster",
+                "phonetic_symbol": "/dɪˈzæstər/ (美) /dɪˈzɑːstə(r)/ (英)",
+                "meaning": "灾难",
+                "part_of_speech": "n."
+            },
+            {
+                "word": "schedule",
+                "phonetic_symbol": "/ˈskedʒuːl/ (美) /ˈʃedjuːl/ (英)",
+                "meaning": "日程安排",
+                "part_of_speech": "n."
+            }
+        ]
+    }
+}
