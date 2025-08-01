@@ -4,3 +4,17 @@ __pycache__/
 wih_venv/
 old_main.py
 voice_cache/
+
+profiles/
+!profiles/american_british_differences.json
+!profiles/interesting_word_book.json
+!profiles/junior_1_word_book.json
+!profiles/junior_2_word_book.json
+
+data/
+!data/american_british_differences.json
+!data/grade_7_first_semester_vocab.json
+!data/grade_7_second_semester_vocab.json
+!data/grade_8_first_semester_vocab.json
+!data/longest_word_root_words.json
+!data/very_simple_words.json
