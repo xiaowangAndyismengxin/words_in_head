@@ -3,7 +3,7 @@
         "en-US": "en-US-AriaNeural",
         "en-GB": "en-GB-RyanNeural",
         "zh-CN": "zh-CN-XiaoxiaoNeural",
-        "english_pronunciation": "en-GB"
+        "english_pronunciation": "en-US"
     },
     "use_dictation_start_sound": true,
     "dictation_delay": 5

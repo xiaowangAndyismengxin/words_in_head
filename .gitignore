@@ -2,6 +2,7 @@ try.py
 .idea/
 __pycache__/
 wih_venv/
+wih_env/
 old_main.py
 voice_cache/
 
