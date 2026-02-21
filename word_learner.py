@@ -164,8 +164,7 @@ class WordLearner:
                 # print header
                 print(
                     f"--{section_type}--  ",
-                    f"剩下: {left_words}"
-                    f" 错: {len(wrong_list)
+                    f"剩下: {left_words}" f" 错: {len(wrong_list)
                             + other_wrong_count}\n\n\n",
                 )
                 # wrong word header
@@ -180,8 +179,7 @@ class WordLearner:
                     self.clear()
                     print(
                         f"--{section_type}--  ",
-                        f"剩下: {left_words}"
-                        f" 错: {len(wrong_list)
+                        f"剩下: {left_words}" f" 错: {len(wrong_list)
                                 + other_wrong_count}\n\n\n",
                     )
 

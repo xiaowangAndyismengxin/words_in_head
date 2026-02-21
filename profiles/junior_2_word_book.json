@@ -64,6 +64,37 @@
           }
         }
       ]
+    },
+    {
+      "name": "初二下百词大过关",
+      "generate_method": "manual",
+      "content": [
+        {
+          "name":"unit1 ~ unit4百词大过关",
+          "content": {
+            "data_file_name": "grade_8_second_semester_vocab.json",
+            "unit_keys": [
+              "unit1",
+              "unit2",
+              "unit3",
+              "unit4"
+            ]
+          }
+        },
+        {
+          "name":"unit5 ~ unit8百词大过关",
+          "generate_method": "manual",
+          "content": {
+            "data_file_name": "grade_8_second_semester_vocab.json",
+            "unit_keys": [
+              "unit5",
+              "unit6",
+              "unit7",
+              "unit8"
+            ]
+          }
+        }
+      ]
     }
   ]
 }

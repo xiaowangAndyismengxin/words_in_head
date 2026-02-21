@@ -157,11 +157,9 @@ class WordLearningApp:
                 ),
                 end="",
             )
-            print(
-                f"  当前发音: {self.learner.default_en_voice
+            print(f"  当前发音: {self.learner.default_en_voice
                 .replace("en-US", "美音")
-                .replace("en-GB", "英音")}({self.learner.default_en_voice})"
-            )
+                .replace("en-GB", "英音")}({self.learner.default_en_voice})")
             print()
 
             if self.current_content.get("words") is None:
